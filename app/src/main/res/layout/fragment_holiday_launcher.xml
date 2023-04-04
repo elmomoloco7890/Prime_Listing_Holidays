@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="holidayLauncherFragment"
+            type="prime.projects.prime_listing_holidays.fragments.HolidayLauncherFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/holiday_light_orange"
+        tools:context=".fragments.HolidayLauncherFragment">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="28sp"
+            android:textColor="@color/holiday_lightest_orange"
+            android:background="@color/holiday_purple"
+            android:textStyle="bold"
+            android:text="@string/holiday_launcher_heading"
+            app:layout_constraintBottom_toTopOf="@+id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/my_holiday_btns"
+            android:textColor="@color/holiday_lightest_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/holiday_launch_txt"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:onClick="@{()-> holidayLauncherFragment.onHolidayLaunch()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline3"
+            app:layout_constraintVertical_bias="0.388" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="94dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

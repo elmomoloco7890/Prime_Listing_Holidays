@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holiday_nav_graph"
+    app:startDestination="@id/holidayLauncherFragment">
+
+    <fragment
+        android:id="@+id/holidayLauncherFragment"
+        android:name="prime.projects.prime_listing_holidays.fragments.HolidayLauncherFragment"
+        android:label="fragment_holiday_launcher"
+        tools:layout="@layout/fragment_holiday_launcher" >
+        <action
+            android:id="@+id/action_holidayLauncherFragment_to_holidayListFragment"
+            app:destination="@id/holidayListFragment" />
+        <action
+            android:id="@+id/action_holidayLauncherFragment_to_holidayMessageFragment"
+            app:destination="@id/holidayMessageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/holidayListFragment"
+        android:name="prime.projects.prime_listing_holidays.fragments.HolidayListFragment"
+        android:label="HolidayListFragment"
+        tools:layout="@layout/fragment_holiday_list"
+        >
+        <action
+            android:id="@+id/action_holidayListFragment_to_holidayMessageFragment"
+            app:destination="@id/holidayMessageFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/holidayMessageFragment"
+        android:name="prime.projects.prime_listing_holidays.fragments.HolidayMessageFragment"
+        android:label="HolidayMessageFragment"
+        tools:layout="@layout/fragment_holiday_message"
+        >
+        <action
+            android:id="@+id/action_holidayMessageFragment_to_holidayLauncherFragment"
+            app:destination="@id/holidayLauncherFragment" />
+        <action
+            android:id="@+id/action_holidayMessageFragment_to_holidayListFragment"
+            app:destination="@id/holidayListFragment" />
+    </dialog>
+</navigation>
