@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="holiday_light_orange">#DA9965</color>
+    <color name="holiday_lightest_orange">#FFBC87</color>
+    <color name="holiday_medium_orange">#B75100</color>
+    <color name="holiday_dark_orange">#652D00</color>
+    <color name="holiday_purple">#532DA9</color>
+    <color name="holiday_transparent">#00532DA9</color>
+</resources>

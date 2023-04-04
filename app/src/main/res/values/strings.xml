@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Prime_Listing_Holidays</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="holiday_launch_txt">See the list</string>
+    <string name="holiday_back_txt">Go back </string>
+
+    <string name="holiday_launcher_heading">Welcome to the holiday list</string>
+    <string name="holiday_list_heading">Here are the Holidays</string>
+
+    <string name="holiday_message_header">Congratulations</string>
+    <string name="holiday_message_txt">You have seen the light :)</string>
+    <string name="holiday_okayed_txt">Okay</string>
+    <string name="holiday_cancelled_txt">Cancel</string>
+
+
+</resources>
